@@ -1,8 +1,26 @@
 import React from "react";
-import Nav from "./components/nav";
-import About from "./components/about";
 
 function Nav() {
+  const categories = [
+    {
+      name: "commercial",
+      description:
+        "Photoes of grocery stores, food trucks, and other commercial projects",
+    },
+    {
+      name: "portraits",
+      description: "Portraits of people in my life",
+    },
+    {
+      name: "food",
+      description: "Delicious delicacies",
+    },
+    {
+      name: "landscape",
+      description: "Fields, farmhouses, waterfalls, and the beauty of nature",
+    },
+  ];
+
   return (
     <header>
       <h2>
@@ -19,8 +37,13 @@ function Nav() {
             <a href="#about">About Me</a>
           </li>
           <li>
-            <Span>Contact</Span>
+            <span>Contact</span>
           </li>
+          {categories.map((category) => (
+            <li className="mx-1" key={category.name}>
+              <span onClick={categorySelected}> {category.name}</span>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
