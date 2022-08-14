@@ -16,25 +16,29 @@ function Nav() {
     },
   ];
 
-  const handleClick = () => {
-    console.log("click handled");
+  const handleClick = (item) => {
+    console.log("item");
+    return item;
   };
 
   return (
-    <header data-testid="header" className="flex-row px-1">
+    <header className="flex-row px-1">
       <h2>
-        <a href="/">
+        <a data-testid="link" href="/">
           <span role="img" aria-label="camera">
-            {" "}
             📸
-          </span>{" "}
+          </span>
           Oh Snap!
         </a>
       </h2>
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a href="#about" onClick={() => handleClick()}>
+            <a
+              data-testid="about"
+              href="#about"
+              onClick={() => handleClick("About")}
+            >
               About me
             </a>
           </li>
