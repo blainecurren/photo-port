@@ -6,7 +6,6 @@ function ContactForm() {
     email: "",
     message: "",
   });
-  // JSX
 
   const { name, email, message } = formState;
 
@@ -24,7 +23,7 @@ function ContactForm() {
           <label htmlFor="name">Name:</label>
           <input
             type="text"
-            defaultValue={formState.name}
+            defaultValue={name}
             onChange={handleChange}
             name="name"
           />
@@ -33,7 +32,7 @@ function ContactForm() {
           <label htmlFor="email">Email Address:</label>
           <input
             type="email"
-            defaultValue={formState.email}
+            defaultValue={email}
             name="email"
             onChange={handleChange}
           />
@@ -42,7 +41,7 @@ function ContactForm() {
           <label htmlFor="message">Message:</label>
           <textarea
             name="message"
-            defaultValue={formState.message}
+            defaultValue={message}
             onChange={handleChange}
             rows="5"
           />
