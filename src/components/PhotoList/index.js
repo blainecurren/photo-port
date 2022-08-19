@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Modal from "../Modal";
 
-const [currentPhoto, setCurrentPhoto] = useState();
-
 const PhotoList = ({ category }) => {
+  const [currentPhoto, setCurrentPhoto] = useState();
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+
   const [photos] = useState([
     {
       name: "Grocery aisle",
