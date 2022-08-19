@@ -3,6 +3,7 @@ import { render, cleanup, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Modal from "..";
 
+const mockToggleModal = jest.fn();
 const currentPhoto = {
   name: "Park Bench",
   category: "landscape",
@@ -13,12 +14,14 @@ const currentPhoto = {
 
 afterEach(cleanup);
 
-describe('Modal Component', () => {
-    it('renders', () => {
+describe("Modal Component", () => {
+  it("renders", () => {
+    render(<Modal onClose={mockToggleModal} currentPhoto={currentPhoto} />);
+  });
+});
 
-    })
-})
-
-it('matches', () => {
-    
-})
+it("matches snapshot DOM node structure", () => {
+  const { asFragment } = render(
+    <Modal onClose={mockToggleModal} currentPhoto={currentPhoto} />
+  );
+});
