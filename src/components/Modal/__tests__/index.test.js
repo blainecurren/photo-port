@@ -25,3 +25,12 @@ it("matches snapshot DOM node structure", () => {
     <Modal onClose={mockToggleModal} currentPhoto={currentPhoto} />
   );
 });
+describe("Click Event", () => {
+  it("calls onClose handler", () => {
+    const { getByText } = render(
+      <Modal onClose={mockToggleModal} currentPhoto={currentPhoto} />
+    );
+    fireEvent.click(getByText("Close this modal"));
+    expect(mockToggleModal).toHaveBeenCalledTimes(1);
+  });
+});
