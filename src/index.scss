@@ -1,3 +1,5 @@
+@import "./global.scss";
+
 main {
   margin: 0 auto;
   max-width: 90%;
@@ -34,7 +36,7 @@ body {
   letter-spacing: 0.1em;
   background: var(--dark);
   color: var(--light);
-  font-family: "sans-serif";
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -90,6 +92,46 @@ a:hover {
 
 header {
   background: var(--dark);
+}
+
+.wrapper {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      font-size: 40px;
+      font-weight: 700;
+      text-decoration: none;
+      color: inherit;
+      margin-right: 40px;
+    }
+
+    .itemContainer {
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+
+      @include mobile {
+        display: none;
+      }
+
+      .icon {
+        font-size: 18px;
+        margin-right: 5px;
+      }
+
+      span {
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+  }
 }
 
 header a {

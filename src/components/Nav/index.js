@@ -18,14 +18,22 @@ function Nav(props) {
 
   return (
     <header className="flex-row px-1">
-      <h2>
-        <a data-testid="link" href="/">
-          <span role="img" aria-label="camera">
-            📸
-          </span>
-          Oh Snap!
-        </a>
-      </h2>
+      <div className="wrapper">
+        <div className="left">
+          <h2>
+            <a data-testid="link" href="/">
+              Portfolio.
+            </a>
+          </h2>
+          <div className="itemContainer">
+            <Mail className="icon" />
+            <a href="mailto:blaine.curren@gmail.com?body=My custom mail body">
+              blaine.curren@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+
       <nav>
         <ul className="flex-row">
           <li className="mx-2">

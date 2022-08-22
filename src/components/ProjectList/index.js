@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "../Modal";
 
-const PhotoList = ({ category }) => {
+const ProjectList = ({ category }) => {
   const [currentPhoto, setCurrentPhoto] = useState();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -149,4 +149,4 @@ const PhotoList = ({ category }) => {
   );
 };
 
-export default PhotoList;
+export default ProjectList;

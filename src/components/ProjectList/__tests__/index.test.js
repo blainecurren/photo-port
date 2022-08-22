@@ -1,17 +1,17 @@
 import React from "react";
 import { render, cleanup } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import PhotoList from "..";
+import ProjectList from "..";
 
 afterEach(cleanup);
 
-describe("PhotoList is rendering", () => {
+describe("ProjectList is rendering", () => {
   it("renders", () => {
-    render(<PhotoList />);
+    render(<ProjectList />);
   });
 
   it("renders", () => {
-    const { asFragment } = render(<PhotoList />);
+    const { asFragment } = render(<ProjectList />);
     expect(asFragment()).toMatchSnapshot();
   });
 });
