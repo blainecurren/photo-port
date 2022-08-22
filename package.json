@@ -1,5 +1,5 @@
 {
-  "homepage": "http://<blainecurren>.github.io/photo-port",
+
   "name": "photo-port",
   "version": "0.1.0",
   "private": true,
@@ -8,8 +8,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "scss": "^0.2.4",
     "web-vitals": "^2.1.4"
   },
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -42,3 +44,4 @@
     "gh-pages": "^4.0.0"
   }
 }
+

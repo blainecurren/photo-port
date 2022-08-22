@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
+import { Person, Mail } from "@material-ui/icons";
 
 function Nav(props) {
   const {
