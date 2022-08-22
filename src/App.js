@@ -3,6 +3,7 @@ import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Nav from "./components/Nav";
 import ContactForm from "./components/Contact";
+import Menu from "./components/Menu/index.js";
 
 function App() {
   const [categories] = useState([
@@ -23,6 +24,8 @@ function App() {
 
   const [contactSelected, setContactSelected] = useState(false);
 
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div>
       <Nav
@@ -32,6 +35,7 @@ function App() {
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
       ></Nav>
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <main>
         {!contactSelected ? (
           <>
