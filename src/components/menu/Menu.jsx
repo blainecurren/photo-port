@@ -1,3 +1,5 @@
+import scss from "./menu.scss";
+
 export default function Menu({ menuOpen, setMenuOpen }) {
   return (
     <div className={"menu " + (menuOpen && "active")}>
