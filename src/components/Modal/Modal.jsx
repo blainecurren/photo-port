@@ -1,6 +1,6 @@
 import React from "react";
 
-const Modal = ({ onClose, currentPhoto, linkClick }) => {
+export default function Modal({ onClose, currentPhoto, linkClick }) {
   const { name, category, description, index } = currentPhoto;
 
   return (
@@ -19,6 +19,4 @@ const Modal = ({ onClose, currentPhoto, linkClick }) => {
       </div>
     </div>
   );
-};
-
-export default Modal;
+}

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import { Person, Mail } from "@material-ui/icons";
 
-function Nav(props, menuOpen, setMenuOpen) {
+export default function Nav(props, menuOpen, setMenuOpen) {
   const {
     categories = [],
     setCurrentCategory,
@@ -78,5 +78,3 @@ function Nav(props, menuOpen, setMenuOpen) {
     </header>
   );
 }
-
-export default Nav;

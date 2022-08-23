@@ -1,7 +1,7 @@
 import React from "react";
 import { render, cleanup } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Gallery from "..";
+import Gallery from "../Gallery";
 
 const portrait = {
   name: "portraits",

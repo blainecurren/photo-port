@@ -1,8 +1,8 @@
 import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
-import ProjectList from "../ProjectList";
+import ProjectList from "../projectList/ProjectList";
 
-function Gallery(props) {
+export default function Gallery(props) {
   const { currentCategory } = props;
   return (
     <section>
@@ -12,5 +12,3 @@ function Gallery(props) {
     </section>
   );
 }
-
-export default Gallery;

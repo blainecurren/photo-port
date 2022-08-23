@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import About from "./components/About";
-import Gallery from "./components/Gallery";
-import Nav from "./components/Nav";
-import ContactForm from "./components/Contact";
-import Menu from "./components/Menu/index.js";
+import About from "./components/about/About";
+import Gallery from "./components/gallery/Gallery";
+import Nav from "./components/nav/Nav";
+import ContactForm from "./components/contact/Contact";
+import Menu from "./components/menu/Menu.jsx";
 
 function App() {
   const [categories] = useState([
