@@ -11,7 +11,7 @@ export default function Nav({ menuOpen, setMenuOpen }) {
           </a>
           <div className="itemContainer">
             <Person className="icon" />
-            <span>940-704-2282gi</span>
+            <span>940-704-2282</span>
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
