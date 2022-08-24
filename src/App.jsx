@@ -27,7 +27,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div>
+    <div className="app">
       <Nav
         categories={categories}
         setCurrentCategory={setCurrentCategory}
