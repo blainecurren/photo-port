@@ -29,12 +29,14 @@ function App() {
   return (
     <div className="app">
       <Nav
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
-      ></Nav>
+      />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <main>
         {!contactSelected ? (
