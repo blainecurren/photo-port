@@ -1,6 +1,6 @@
 import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
-import ProjectList from "../ProjectList/ProjectList";
+import ProjectList from "../projectList/ProjectList";
 
 export default function Gallery(props) {
   const { currentCategory } = props;
