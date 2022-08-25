@@ -12,7 +12,9 @@ export default function Modal({ onClose, currentPhoto, linkClick }) {
           alt="current category"
         />
         <p>{description}</p>
-        <button onClick={linkClick} type="button"></button>
+        <button onClick={linkClick} type="button">
+          Check out this project!
+        </button>
         <button onClick={onClose} type="button">
           Close this modal
         </button>
