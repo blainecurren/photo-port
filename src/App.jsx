@@ -38,16 +38,18 @@ function App() {
         setContactSelected={setContactSelected}
       />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <main>
-        {!contactSelected ? (
-          <>
-            <About></About>
-            <Gallery currentCategory={currentCategory}></Gallery>
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
-      </main>
+      <div className="sections">
+        <main>
+          {!contactSelected ? (
+            <>
+              <About></About>
+              <Gallery currentCategory={currentCategory}></Gallery>
+            </>
+          ) : (
+            <ContactForm></ContactForm>
+          )}
+        </main>
+      </div>
     </div>
   );
 }
