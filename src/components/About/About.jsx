@@ -1,5 +1,7 @@
 import React from "react";
 import coverImage from "../../assets/cover/cover-image.jpg";
+import { init } from "ityped";
+import { useEffect, useRef } from "react";
 
 export default function About() {
   return (
