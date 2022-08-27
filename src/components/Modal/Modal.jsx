@@ -1,4 +1,5 @@
 import React from "react";
+import scss from "./modal.scss";
 
 export default function Modal({ onClose, currentPhoto, linkClick }) {
   const { name, category, description, index } = currentPhoto;
