@@ -4,6 +4,7 @@ import ProjectList from "../projectList/ProjectList";
 import scss from "./gallery.scss";
 
 export default function Gallery(props) {
+  
   const { currentCategory } = props;
   return (
     <div className="portfolio">

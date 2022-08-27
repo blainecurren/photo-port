@@ -39,16 +39,14 @@ function App() {
       />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
-        <main>
-          {!contactSelected ? (
-            <>
-              <About></About>
-              <Gallery currentCategory={currentCategory}></Gallery>
-            </>
-          ) : (
-            <ContactForm></ContactForm>
-          )}
-        </main>
+        {!contactSelected ? (
+          <>
+            <About></About>
+            <Gallery currentCategory={currentCategory}></Gallery>
+          </>
+        ) : (
+          <ContactForm></ContactForm>
+        )}
       </div>
     </div>
   );
