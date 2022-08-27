@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import About from "./components/about/About";
 import Gallery from "./components/gallery/Gallery";
 import Nav from "./components/nav/Nav";
-import ContactForm from "./components/contact/Contact";
+import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu.jsx";
 
 function App() {
@@ -41,7 +41,7 @@ function App() {
       <div className="sections">
         <About />
         <Gallery currentCategory={currentCategory}></Gallery>)
-        <ContactForm />
+        <Contact />
       </div>
     </div>
   );
