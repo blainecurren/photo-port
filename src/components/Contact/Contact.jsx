@@ -3,7 +3,7 @@ import { validateEmail } from "../../utils/helpers";
 import "./contact.scss";
 
 export default function Contact() {
-  const [message, setMessage] = useState(fasle);
+  const [message, setMessage] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
