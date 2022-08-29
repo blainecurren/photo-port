@@ -28,19 +28,18 @@ function App() {
 
   return (
     <div className="app">
-      <Nav
-        menuOpen={menuOpen}
-        setMenuOpen={setMenuOpen}
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      />
+      <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <About />
-        <Gallery currentCategory={currentCategory}></Gallery>)
+        <Gallery
+          categories={categories}
+          setCurrentCategory={setCurrentCategory}
+          currentCategory={currentCategory}
+          contactSelected={contactSelected}
+          setContactSelected={setContactSelected}
+        ></Gallery>
+        )
         <Contact />
       </div>
     </div>

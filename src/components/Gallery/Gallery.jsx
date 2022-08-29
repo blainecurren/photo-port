@@ -14,8 +14,8 @@ export default function Gallery(props) {
   } = props;
 
   return (
-    <div className="portfolio">
-      {/* <header>
+    <div className="gallery">
+      <header>
         <h2>
           <a data-testid="link" href="/">
             <span role="img" aria-label="camera">
@@ -60,7 +60,7 @@ export default function Gallery(props) {
             ))}
           </ul>
         </nav>
-      </header> */}
+      </header>
       <section>
         <h1 data-testid="h1tag">
           {capitalizeFirstLetter(currentCategory.name)}
