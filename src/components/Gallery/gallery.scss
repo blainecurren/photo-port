@@ -1,4 +1,13 @@
-// @import "./global.scss";
+.gallery-header {
+  display: flex;
+  margin: 10px;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.mx-1 {
+  margin: 10px;
+}
 
 // header {
 //   background: var(--dark);
