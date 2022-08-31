@@ -55,23 +55,13 @@ export default function Gallery(props) {
           </ul>
         </nav>
       </header>
-      <div className="card">
-        <div className="card-image">
-          <figure class="image is-4by3">
-            <img
-              src="https://bulma.io/images/placeholders/1280x960.png"
-              alt="placeholder image"
-            ></img>
-          </figure>
-        </div>
-        <section>
-          <h1 data-testid="h1tag">
-            {capitalizeFirstLetter(currentCategory.name)}
-          </h1>
-          <p>{currentCategory.description}</p>
-          <ProjectList category={currentCategory.name} />
-        </section>
-      </div>
+      <section>
+        <h1 data-testid="h1tag">
+          {capitalizeFirstLetter(currentCategory.name)}
+        </h1>
+        <p>{currentCategory.description}</p>
+        <ProjectList category={currentCategory.name} />
+      </section>
     </div>
   );
 }
