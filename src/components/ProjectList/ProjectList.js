@@ -134,20 +134,16 @@ const ProjectList = ({ category }) => {
       {isModalOpen && (
         <Modal currentPhoto={currentPhoto} onClose={toggleModal} />
       )}
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            {currentPhotos.map((image, i) => (
-              <img
-                src={require(`../../assets/small/${category}/${i}.jpg`)}
-                alt={image.name}
-                className="img-thumbnail mx-1"
-                onClick={() => toggleModal(image, i)}
-                key={image.name}
-              />
-            ))}
-          </figure>
-        </div>
+      <div className="flex-row">
+        {currentPhotos.map((image, i) => (
+          <img
+            src={require(`../../assets/small/${category}/${i}.jpg`)}
+            alt={image.name}
+            className="img-thumbnail mx-1"
+            onClick={() => toggleModal(image, i)}
+            key={image.name}
+          />
+        ))}
       </div>
     </div>
   );
