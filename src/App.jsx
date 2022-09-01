@@ -39,7 +39,7 @@ function App() {
           contactSelected={contactSelected}
           setContactSelected={setContactSelected}
         ></Gallery>
-        )
+
         <Contact />
       </div>
     </div>

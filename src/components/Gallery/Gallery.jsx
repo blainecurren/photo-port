@@ -16,10 +16,9 @@ export default function Gallery(props) {
   return (
     <div className="gallery">
       <header>
-        <nav>
-          <ul className="flex-row">
-            <li className="gallery-header">
-              {/*<li className="mx-2">
+        <ul className="flex-row">
+          <li className="gallery-header">
+            {/*<li className="mx-2">
                  <a
                  data-testid="about"
                  href="#about"
@@ -32,28 +31,27 @@ export default function Gallery(props) {
                  make this on click to link contact
                  <span onClick={() => setContactSelected(true)}>Contact</span> 
                 </li> */}
-              {categories.map((category) => (
-                <li
-                  className={`mx-1 ${
-                    currentCategory.name === category.name &&
-                    !contactSelected &&
-                    "navActive"
-                  }`}
-                  key={category.name}
+            {categories.map((category) => (
+              <li
+                className={`mx-1 ${
+                  currentCategory.name === category.name &&
+                  !contactSelected &&
+                  "navActive"
+                }`}
+                key={category.name}
+              >
+                <span
+                  onClick={() => {
+                    setCurrentCategory(category);
+                    setContactSelected(false);
+                  }}
                 >
-                  <span
-                    onClick={() => {
-                      setCurrentCategory(category);
-                      setContactSelected(false);
-                    }}
-                  >
-                    {capitalizeFirstLetter(category.name)}
-                  </span>
-                </li>
-              ))}
-            </li>
-          </ul>
-        </nav>
+                  {capitalizeFirstLetter(category.name)}
+                </span>
+              </li>
+            ))}
+          </li>
+        </ul>
       </header>
       <section>
         <h1 data-testid="h1tag">
